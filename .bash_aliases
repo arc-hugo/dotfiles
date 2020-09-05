@@ -10,6 +10,7 @@ alias la='ls -a'
 alias ll='ls -l'
 alias t='time'
 alias k='kill'
+alias r='ranger'
 alias null='/dev/null'
 
 # Navigation aliases
