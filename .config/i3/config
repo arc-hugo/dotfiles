@@ -202,7 +202,7 @@ exec /usr/bin/setxkbmap fr
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id numlockx on
 exec --no-startup-id picom --config $HOME/.config/picom/picom.conf
-exec --no-startup-id dropbox
+exec --no-startup-id nextcloud
 
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/urxvt; layout tabbed'
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox; layout tabbed'
