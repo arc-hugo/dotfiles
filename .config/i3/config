@@ -196,6 +196,17 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 # Webcam toggle
 bindsym F10 exec $HOME/bin/webcam_toggle.sh
 
+# Exit menu
+mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
+  bindsym l exec i3-msg exit
+  bindsym r exec systemctl reboot
+  bindsym s exec systemctl shutdown
+  bindsym Escape mode "default"
+  bindsym Return mode "default"
+}
+bindsym $mod+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
+
+
 #Start with i3
 exec --no-startup-id /usr/bin/feh --bg-center $HOME/.config/i3/wallpaper.jpg
 exec /usr/bin/setxkbmap fr
