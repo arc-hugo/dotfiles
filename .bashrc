@@ -57,11 +57,16 @@ function parse_git_dirty {
 }
 
 export PS1="\[\033[38;5;24m\][\u@\h \[\033[38;5;33m\]\W \[\033[38;5;54m\]\`parse_git_branch\`\[\033[38;5;24m\]]\[\033[38;5;33m\]\$\[$(tput sgr0)\] "
-#export PS1="\[\033[38;5;202m\][\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;237m\]\W\[$(tput sgr0)\]\[\033[38;5;202m\]]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 
+# start keychain
+eval $(keychain --eval --quiet --confhost id_rsa)
+
+# Java env variables
 export LD_LIBRARY_PATH="/usr/lib/:$LD_LIBRARY_PATH"
 export ANDROID_HOME=$HOME/and/Sdk
 
+# PATH
 PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$HOME/go/bin
 
+# other env variables
 export EDITOR="nvim"
