@@ -83,7 +83,6 @@ alias mopiconf='vim ~/.config/mopidy/mopidy.conf'
 alias ncmconf='vim ~/.ncmpcpp/config'
 
 # Other aliases
-alias videospyder='python ~/bin/videospyder.py'
 alias conv-iso-uft='iconv -f iso-8859-15 -t utf-8'
 alias open-gz='tar xvzf'
 alias open-bz='tar xvjf'
