@@ -1,6 +1,6 @@
 # dotfiles
 ___
-Personnal dotfiles for my ArchLinux system
+Personnal dotfiles for my Arch Linux system
 
 ## Installation
 
