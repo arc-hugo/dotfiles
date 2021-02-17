@@ -1,6 +1,7 @@
 # dotfiles
 ___
-Personnal dotfiles for my Arch Linux system
+Personnal dotfiles for my Arch Linux system  
+![shell](shell.png)
 
 ## Installation
 
