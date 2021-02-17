@@ -66,7 +66,8 @@ export LD_LIBRARY_PATH="/usr/lib/:$LD_LIBRARY_PATH"
 export ANDROID_HOME=$HOME/and/Sdk
 
 # PATH
-PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$HOME/go/bin:$HOME/bin
+PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$HOME/go/bin:$HOME/bin:$HOME/.cargo/bin:$HOME/.local/bin
 
 # other env variables
 export EDITOR="nvim"
+export VISUAL="nvim"
