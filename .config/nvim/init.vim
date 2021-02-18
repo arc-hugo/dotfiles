@@ -1,4 +1,4 @@
-" 
+" Handling multiple buffers
 set hidden
 
 " Prevent from backup issues (coc.vim)
