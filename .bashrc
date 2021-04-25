@@ -58,7 +58,7 @@ function parse_git_dirty {
 
 export PS1="\[\033[38;5;24m\][\u@\h \[\033[38;5;33m\]\W \[\033[38;5;54m\]\`parse_git_branch\`\[\033[38;5;24m\]]\[\033[38;5;33m\]\$\[$(tput sgr0)\] "
 
-# start keychain
+# Start keychain
 eval $(keychain --eval --quiet --confhost id_rsa)
 
 # Java env variables

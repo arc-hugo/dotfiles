@@ -76,11 +76,11 @@ alias scopeconf='vim ~/.config/ranger/scope.sh'
 # Xresources aliases
 alias xconf='vim ~/.Xresources'
 
-# Mopidy alias
-alias mopiconf='vim ~/.config/mopidy/mopidy.conf'
-
 # ncmpcpp aliases
 alias ncmconf='vim ~/.ncmpcpp/config'
+
+# dunst aliases
+alias dunstconf='vim ~/.config/dunst/dunstrc'
 
 # Other aliases
 alias conv-iso-uft='iconv -f iso-8859-15 -t utf-8'
@@ -89,3 +89,4 @@ alias open-bz='tar xvjf'
 alias open-xz='tar xf'
 alias vim='nvim'
 alias sxiv='sxiv -a'
+alias youtube-dl-mp3='youtube-dl -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0'

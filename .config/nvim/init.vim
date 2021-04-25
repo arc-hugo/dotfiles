@@ -53,6 +53,8 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " C/C++ highlight
 Plug 'jackguo380/vim-lsp-cxx-highlight'
+" GLSL shaders highlight
+Plug 'tikhomirov/vim-glsl'
 " Linter
 Plug 'dense-analysis/ale'
 " Formatage de code
@@ -63,6 +65,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'rbgrouleff/bclose.vim'
 " Intégrer ranger à nvim
 Plug 'francoiscabrol/ranger.vim'
+" Ayu theme
+Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
 " Always show the signcolumn, otherwise it would shift the text each time
@@ -230,3 +234,13 @@ let g:neoformat_enabled_c = ['clangformat']
 
 " Markdown Preview config
 let g:mkdp_auto_close = 0
+
+" coc-prettier config
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" Ayu config
+set termguicolors     " enable true colors support
+"let ayucolor="light"  " for light version of theme
+"let ayucolor="mirage" " for mirage version of theme
+let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
