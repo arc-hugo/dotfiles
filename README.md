@@ -20,4 +20,4 @@ Checkout the repository content.
 dotfiles checkout
 ```
 
-**YOUR GOOD TO GO!**
+**YOU'RE GOOD TO GO!**
