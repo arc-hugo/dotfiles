@@ -9,7 +9,7 @@ Personnal dotfiles for my Arch Linux system
 
 Clone it in your HOME directory.  
 ```
-git clone --bare https://github.com/hugobarral/dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/arc-hugo/dotfiles.git $HOME/.dotfiles
 ```
 Define an alias in the current shell.  
 ```
