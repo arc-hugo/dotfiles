@@ -53,6 +53,12 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " C/C++ highlight
 Plug 'jackguo380/vim-lsp-cxx-highlight'
+" Rust highlight
+Plug 'rust-lang/rust.vim'
+" TOML highlight
+Plug 'cespare/vim-toml'
+" OCaml support
+Plug 'reasonml-editor/vim-reason-plus'
 " GLSL shaders highlight
 Plug 'tikhomirov/vim-glsl'
 " Linter

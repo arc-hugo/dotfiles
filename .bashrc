@@ -9,6 +9,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.bash_profile ]; then
+   . ~/.bash_profile
+fi
+
 # get current branch in git repo
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
@@ -62,12 +66,16 @@ export PS1="\[\033[38;5;24m\][\u@\h \[\033[38;5;33m\]\W \[\033[38;5;54m\]\`parse
 eval $(keychain --eval --quiet --confhost id_rsa)
 
 # Java env variables
-export LD_LIBRARY_PATH="/usr/lib/:$LD_LIBRARY_PATH"
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
+#export LD_LIBRARY_PATH="/usr/lib/:$LD_LIBRARY_PATH"
 export ANDROID_HOME=$HOME/and/Sdk
 
-# PATH
-PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$HOME/go/bin:$HOME/bin:$HOME/.cargo/bin:$HOME/.local/bin
+# VitaSDK
+export VITASDK=/usr/local/vitasdk
 
 # other env variables
 export EDITOR="nvim"
 export VISUAL="nvim"
+
+# PATH
+PATH=$PATH:$JAVA_HOME/bin:$VITASDK/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$HOME/go/bin:$HOME/bin:$HOME/.cargo/bin:$HOME/.local/bin

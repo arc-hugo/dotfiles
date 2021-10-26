@@ -204,6 +204,8 @@ mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
 }
 bindsym $mod+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
 
+# Picture-in-Picture visible on every workspace
+for_window [id="firefox" title="Picture-in-Picture"] sticky enable
 
 #Start with i3
 exec --no-startup-id /usr/bin/feh --bg-center $HOME/.config/i3/wallpaper.jpg
@@ -212,7 +214,10 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id numlockx on
 exec --no-startup-id picom --config $HOME/.config/picom/picom.conf
 exec --no-startup-id nextcloud
+exec --no-startup-id betterlockscreen -w dim
 
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/alacritty; layout tabbed'
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox; layout tabbed'
 exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/thunderbird; layout tabbed'
+exec --no-startup-id i3-msg 'workspace 0; exec /usr/bin/htop; layout tabbed'
+exec --no-startup-id i3-msg 'workspace 1'
