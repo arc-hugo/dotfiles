@@ -79,3 +79,4 @@ export VISUAL="nvim"
 
 # PATH
 PATH=$PATH:$JAVA_HOME/bin:$VITASDK/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$HOME/go/bin:$HOME/bin:$HOME/.cargo/bin:$HOME/.local/bin
+MANPATH=$PATH:$HOME/.tina/doc/man
